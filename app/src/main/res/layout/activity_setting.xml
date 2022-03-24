@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sky"
+    tools:context=".SettingActivity">
+
+    <GridLayout
+        android:layout_width="350dp"
+        android:layout_height="500dp"
+        android:layout_gravity="center_horizontal"
+        android:columnCount="1">
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:text="เพิ่มประเภทรายการ"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:text="รายการ"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinnerType"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:background="@drawable/drawable_button" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:text="รายละเอียดรายการ"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextcontent"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/drawable_button"
+                android:gravity="center_vertical"
+                android:layout_marginRight="50dp"
+                android:hint="เพิ่มรายการ"
+                android:maxLength="20"
+                android:paddingHorizontal="10dp"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/btDataType"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/drawable_button"
+                style="@style/ButtonStyles"
+                android:layout_centerVertical="true" />
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/btSave"
+            style="@style/ButtonSaveStyles"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/drawable_buttonsave"
+            android:text="บันทึกข้อมูล"
+            android:textStyle="bold" />
+
+
+
+
+
+    </GridLayout>
+
+</ScrollView>

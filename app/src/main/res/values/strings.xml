@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Money</string>
+    <string-array name="spinner_type">
+        <item>รายรับ</item>
+        <item>รายจ่าย</item>
+    </string-array>
+</resources>
